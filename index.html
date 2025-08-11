@@ -1,19 +1,21 @@
-<head>
+<!doctype html>
+<html lang="fr">
+  <head>
     <meta charset="UTF-8" />
     
-    <!-- Mettez ici le chemin vers votre favicon. Il est dans le dossier 'public' -->
+    <!-- Chemin vers votre favicon dans le dossier 'public' -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- =================================================================== -->
-    <!-- ============== MODIFIEZ LES INFORMATIONS CI-DESSOUS =============== -->
+    <!-- ==============     MÉTADONNÉES POUR LE PARTAGE     ================ -->
     <!-- =================================================================== -->
 
-    <!-- Titre principal (pour l'onglet du navigateur et les moteurs de recherche) -->
+    <!-- Titre principal (onglet du navigateur et recherche Google) -->
     <title>Formulaire de Contact Intelligent | Chouaib GURA</title>
 
-    <!-- Description standard (pour les moteurs de recherche) -->
+    <!-- Description standard (recherche Google) -->
     <meta name="description" content="Démonstration d'un système de qualification de leads automatisé avec n8n et l'Intelligence Artificielle." />
 
     <!-- Balises Open Graph (pour Facebook, LinkedIn, WhatsApp, Telegram, etc.) -->
@@ -21,7 +23,7 @@
     <meta property="og:description" content="Découvrez comment transformer un simple formulaire en un outil de croissance proactif grâce à l'automatisation et l'IA." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://formulaire-de-contact-steel.vercel.app" />
-    <!-- Image d'aperçu : Créez une belle image (1200x630px) et mettez-la dans votre dossier 'public', puis mettez le lien ici -->
+    <!-- Image d'aperçu (1200x630px) à placer dans votre dossier 'public' -->
     <meta property="og:image" content="https://formulaire-de-contact-steel.vercel.app/og-image.png" />
     <meta property="og:image:alt" content="Aperçu du Formulaire de Contact Intelligent" />
 
@@ -31,4 +33,13 @@
     <meta name="twitter:description" content="Découvrez comment transformer un simple formulaire en un outil de croissance proactif grâce à l'automatisation et l'IA." />
     <meta name="twitter:image" content="https://formulaire-de-contact-steel.vercel.app/og-image.png" />
 
-</head>
+  </head>
+  <body>
+    <!-- C'est cette div qui est INDISPENSABLE pour que React fonctionne -->
+    <div id="root"></div>
+    
+    <!-- C'est ce script qui lance toute votre application React -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
